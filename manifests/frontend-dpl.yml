@@ -1,0 +1,21 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: frontend-deployment
+  namespace: todo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend-app-pod
+  template:
+    metadata:
+      labels:
+        app: frontend-app-pod
+    spec:
+      containers:
+        - name: frontend-ct
+          image: shamrock2004/todo-frontend-app 
+          ports:
+            - containerPort: 8080
+

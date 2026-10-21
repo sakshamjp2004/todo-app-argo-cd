@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: backend-deployment
+  namespace: todo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend-app-pod
+  template:
+    metadata:
+      labels:
+        app: backend-app-pod
+    spec:
+      containers:
+        - name: backend-ct
+          image: shamrock2004/todo-backend-app 
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: backend-config
+                  key: DATABASE_URL
+
