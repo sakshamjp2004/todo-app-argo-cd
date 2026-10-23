@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend-ct
-          image: sakshamjp/todo-frontend-app:v1.0.0
+          image: shamrock2004/todo-frontend-app:v1.0.0
           ports:
             - containerPort: 8080
 
