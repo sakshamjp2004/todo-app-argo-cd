@@ -1,8 +1,7 @@
 # Todo App --- CI/CD & GitOps on AWS
 
-A full-stack Todo application deployed on Amazon EKS using Jenkins for
-CI, Docker Hub for container images, and Argo CD for GitOps-based
-continuous delivery.
+An end-to-end DevOps project deploying a React + FastAPI Todo application to Amazon EKS using Terraform, Jenkins, Docker Hub, Argo CD, and Argo CD Image Updater.
+
 
 ## Architecture
 
