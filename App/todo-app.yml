@@ -1,7 +1,7 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: todo-app
+  name: todo-app1
   namespace: argocd
 spec:
   project: default
@@ -16,4 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-    
