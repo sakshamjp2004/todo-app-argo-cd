@@ -6,3 +6,4 @@ resources:
   - backend-dpl.yml
   - frontend-svc.yml
   - backend-svc.yml
+  - backend-config.yml
