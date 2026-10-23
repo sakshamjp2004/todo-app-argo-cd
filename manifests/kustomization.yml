@@ -7,3 +7,10 @@ resources:
   - frontend-svc.yml
   - backend-svc.yml
   - backend-config.yml
+images:
+  - name: shamrock2004/todo-frontend-app
+    newName: shamrock2004/todo-frontend-app
+    newTag: v1.0.3
+  - name: shamrock2004/todo-backend-app
+    newName: shamrock2004/todo-backend-app
+    newTag: v1.0.3
