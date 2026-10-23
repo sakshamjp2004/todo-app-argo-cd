@@ -102,6 +102,3 @@ resources](screenshots/resources.png)
 
 ------------------------------------------------------------------------
 
-**Note:** Add the seven screenshots to the `screenshots/` folder using
-the exact filenames shown above. Replace any screenshot that does not
-match its caption with the correct image from your own project.
